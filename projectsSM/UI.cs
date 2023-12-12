@@ -21,6 +21,9 @@ namespace SKBase
 
 			conf.AddPublicDependency< APIProject >( target );
 
+			conf.VcxprojUserFile = new Configuration.VcxprojUserFileSettings();
+			conf.VcxprojUserFile.LocalDebuggerWorkingDirectory = @"$(SolutionDir)WorkingDir";
+
             conf.PrecompHeader = $"{Name}/{Name}_pch.h";
             conf.PrecompSource = $"{Name}/{Name}_pch.cpp";
 		}
