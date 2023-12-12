@@ -25,7 +25,7 @@ namespace SKBase
 		{
 			conf.Name				= "[target.Api]_[target.Optimization]";
 
-			conf.SolutionFileName	= "[solution.Name]3_[target.Build]_[target.Platform]";
+			conf.SolutionFileName	= "[solution.Name]_[target.Build]_[target.Platform]";
 
 			conf.SolutionPath		= SolutionRootPath;
 
