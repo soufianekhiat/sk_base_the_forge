@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+.vs
+projects
+sharpmake
+*.sln
+tmp
+*.pdb
+*.map
