@@ -32,7 +32,6 @@
 *.app
 .vs
 projects
-sharpmake
 *.sln
 tmp
 *.pdb

@@ -1,3 +1,6 @@
 [submodule "tools/Sharpmake"]
 	path = tools/Sharpmake
 	url = https://github.com/ubisoft/Sharpmake.git
+[submodule "extern/The-Forge"]
+	path = extern/The-Forge
+	url = https://github.com/ConfettiFX/The-Forge.git
