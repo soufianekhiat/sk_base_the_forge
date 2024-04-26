@@ -4,7 +4,9 @@ using Sharpmake;
 
 [module: Sharpmake.Include("API.cs")]
 
-[module: Sharpmake.Include("UI.cs")]
+[module: Sharpmake.Include("Empty.cs")]
+[module: Sharpmake.Include("01_Transforms.cs")]
+[module: Sharpmake.Include("UI_App.cs")]
 
 namespace SKBase
 {
@@ -46,7 +48,9 @@ namespace SKBase
 
 			if ( target.Build == BuildType.Full || target.Build == BuildType.Editor )
 			{
-				conf.AddProject< UIProject  >( target );
+				conf.AddProject< EmptyProject  >( target );
+				conf.AddProject< TransformsProject  >( target );
+				conf.AddProject< UIAppProject  >( target );
 			}
 		}
 	}

@@ -5,19 +5,19 @@ using Sharpmake;
 namespace SKBase
 {
 	[Sharpmake.Generate]
-	public class UIProject : CommonProject
+	public class TransformsProject : CommonProject
 	{
-		public UIProject()
+		public TransformsProject()
 		{
-			Name			= "UI";
-			SourceRootPath	= RootPath + @"\src\UI";
+			Name			= "01_Transforms";
+			SourceRootPath	= RootPath + @"\src\01_Transforms";
 		}
 
 		[Configure()]
 		public void Configure(Configuration conf, SKBaseTarget target)
 		{
 			conf.Output = Configuration.OutputType.Exe;
-			conf.SolutionFolder = "UI";
+			conf.SolutionFolder = "Apps";
 
 			conf.AddPublicDependency< APIProject >( target );
 
@@ -38,9 +38,7 @@ namespace SKBase
 				conf.LibraryFiles.Add("ws2_32");
 			}
 
-			// Copy all compiled shader on the working directory
-			//xcopy <source path>\*.pdf <destination path> /
-			//xcopy C:\git\sk_base_the_forge\x64\Debug\OS C:\git\sk_base_the_forge\WorkingDir /E /H /C /I
+			// TODO change for only if the file didn't exists
 			conf.EventPostBuild.Add("xcopy $(SolutionDir)$(Platform)\\[target.Optimization]\\OS [conf.VcxprojUserFile.LocalDebuggerWorkingDirectory] /E /H /C /I /Y");
 		}
 
