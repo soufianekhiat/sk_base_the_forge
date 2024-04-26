@@ -38,7 +38,7 @@ namespace SKBase
 		{ }
 
 		public SKBaseTarget(Platform platform, TargetAPI api, Optimization optimization, BuildType buildType)
-			: base(platform, DevEnv.vs2022, optimization)
+			: base(platform, DevEnv.vs2019, optimization)
 		{
 			Api = api;
 			Build = buildType;
@@ -139,7 +139,7 @@ namespace SKBase
 		{
 			conf.Defines.Add("_ENABLE_EXTENDED_ALIGNED_STORAGE");
 			conf.Defines.Add("__EMV_WIN__");
-			conf.Defines.Add("WIN32"); // Added for SIGAR to map pid_t properly
+			//conf.Defines.Add("WIN32"); // Added for SIGAR to map pid_t properly
 			conf.LibraryFiles.Add("Wtsapi32"); // Enables applications to receive WTS messages from windows
 			conf.AdditionalLinkerOptions.Add("/ignore:4098,4099,4217,4221");
 			conf.Defines.Add("WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP");

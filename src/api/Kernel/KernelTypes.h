@@ -15,7 +15,9 @@ typedef	void					Void;
 
 typedef	bool					Bool;
 
+#if defined(__cplusplus) && __cplusplus > 201402L
 typedef std::byte				Byte;
+#endif
 
 typedef	std::uint8_t			UInt8;
 typedef	std::uint16_t			UInt16;

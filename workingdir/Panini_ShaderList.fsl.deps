@@ -1,0 +1,9 @@
+:C:/git/The-Forge/Middleware_3/PaniniProjection/Shaders/FSL/Panini_ShaderList.fsl
+
+panini_projection.frag
+"C:/git/The-Forge/Middleware_3/PaniniProjection/Shaders/FSL/panini_projection.frag.fsl"
+"C:/git/The-Forge/Middleware_3/PaniniProjection/Shaders/FSL/resources.h"
+
+panini_projection.vert
+"C:/git/The-Forge/Middleware_3/PaniniProjection/Shaders/FSL/panini_projection.vert.fsl"
+"C:/git/The-Forge/Middleware_3/PaniniProjection/Shaders/FSL/resources.h"
