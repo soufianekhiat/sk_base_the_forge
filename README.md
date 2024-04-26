@@ -1,4 +1,4 @@
-# sk_base
+# sk_base_the_forge
 Base Project for The-Forge using sharpmake [https://github.com/ubisoft/Sharpmake](https://github.com/ubisoft/Sharpmake) as a build system.
 
 Vanilla version that do not modify The-Forge.
